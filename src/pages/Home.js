@@ -33,17 +33,17 @@ function Home() {
         <h2>Our Services</h2>
         <div className="services-grid">
           <div className="service-card">
-            <img src="/images/solarimage7.jpg" alt="Installation"/>
+            <img src={`${process.env.PUBLIC_URL}/images/solarimage7.jpg`} alt="Installation"/>
             <h3>Solar Installation</h3>
             <p>Professional solar panel installation for homes & businesses.</p>
           </div>
           <div className="service-card">
-            <img src="/images/solarmaintain.jpg" alt="Maintenance"/>
+            <img src={`${process.env.PUBLIC_URL}/images/solarmaintain.jpg`} alt="Maintenance"/>
             <h3>Maintenance</h3>
             <p>Keep your system efficient with our expert maintenance services.</p>
           </div>
           <div className="service-card">
-            <img src="/images/solarconsult.jpg" alt="Consultation"/>
+            <img src={`${process.env.PUBLIC_URL}/images/solarconsult.jpg`} alt="Consultation"/>
             <h3>Consultation</h3>
             <p>Get advice on solar solutions tailored to your needs.</p>
           </div>

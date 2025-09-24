@@ -26,7 +26,7 @@ function About() {
             <a href="/contact" className="btn-primary">Speak with a Solar Specialist</a>
           </div>
           <div className="about-image">
-            <img src="/images/happyteam.jpg" alt="Our team installing solar panels" />
+            <img src={`${process.env.PUBLIC_URL}/images/happyteam.jpg`} alt="Our team installing solar panels" />
           </div>
         </div>
       </section>
@@ -63,7 +63,7 @@ function About() {
         <div className="partners-inner">
           <span>In collaboration with</span>
           <div className="partners-logos">
-            <img src="/images/pmsuryaghar.jpg" alt="Partner 1" />
+            <img src={`${process.env.PUBLIC_URL}/images/pmsuryaghar.jpg`} alt="PM Suryaghar Partner" />
           </div>
         </div>
       </section>
@@ -89,17 +89,17 @@ function About() {
         <h2>Meet the Team</h2>
         <div className="team-grid">
           <div className="team-card">
-            <img src="/images/solarowner.jpg" alt="Company Owner" />
+            <img src={`${process.env.PUBLIC_URL}/images/solarowner.jpg`} alt="Company Owner" />
             <h4>Himanshu Shukla</h4>
             <p>Company Owner</p>
           </div>
           <div className="team-card">
-            <img src="/images/solarmanager.jpg" alt="Manager" />
+            <img src={`${process.env.PUBLIC_URL}/images/solarmanager.jpg`} alt="Manager" />
             <h4>Sonu Shukla</h4>
             <p>Manager</p>
           </div>
           <div className="team-card">
-            <img src="/images/TechnicalLeader.jpg" alt="Technical Leader" />
+            <img src={`${process.env.PUBLIC_URL}/images/TechnicalLeader.jpg`} alt="Technical Leader" />
             <h4>Vansh Mishra</h4>
             <p>Tech Team Leader</p>
           </div>
