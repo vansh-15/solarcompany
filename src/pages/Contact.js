@@ -69,7 +69,7 @@ function Contact() {
               Chat on WhatsApp
             </a>
           </div>
-          <div className="info-box">
+          <div className="info-box">  
             <h3>What to expect</h3>
             <ul>
               <li>Free site assessment and savings estimate</li>
