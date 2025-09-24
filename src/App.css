@@ -99,6 +99,27 @@ h1,h2,h3,h4 { margin:0; }
 }
 .contact-form button:hover { background:#ea580c; transform:translateY(-1px); }
 
+.fabwhatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffffff;  /* White background */
+  border-radius: 50%;   /* Circle shape */
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background 0.2s;
+  z-index: 9999;
+}
+
+.fab-whatsapp:hover {
+  transform: scale(1.1);
+  background: #f1f1f1; /* Light grey hover */
+}
+
+
 /* Page container */
 .page-container { padding:4rem 2rem; text-align:center; }
 

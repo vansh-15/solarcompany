@@ -81,12 +81,16 @@ function Contact() {
       </div>
 
       <a
-        className="fab-whatsapp"
+        className="fabwhatsapp"
         href="https://wa.me/91800555XXXX"
         target="_blank"
         rel="noreferrer"
       >
-        WhatsApp
+        <img
+          src={`${process.env.PUBLIC_URL}/images/whatslogo.png`}
+          alt="WhatsApp"
+          style={{ width: "25px", height: "25px"}}
+        />
       </a>
     </div>
   );
