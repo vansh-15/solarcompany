@@ -1,6 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  const [form, setForm] = useState({
+    fullname: "",
+    email: "",
+    pincode: "",
+    whatsapp: "",
+    monthlyBill: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const gsUrl = "https://script.google.com/macros/s/AKfycbxIIIIadsnqQYG86kt7T3qAM5ymBbJkZXiioQ-3GXD3WDAPIB9wc0ydgI_4hSH9g5wd/exec"; // replace with your Google Apps Script URL
+
+    // If running locally, show alert (cannot submit due to CORS)
+    if (window.location.hostname === "localhost") {
+      alert(
+        "Form submissions only work after deployment due to Google Apps Script CORS restrictions."
+      );
+      return;
+    }
+
+    try {
+      const response = await fetch(gsUrl, {
+        method: "POST",
+        body: JSON.stringify(form),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+
+      if (data.result === "success") {
+        alert("Form submitted successfully!");
+        setForm({
+          fullname: "",
+          email: "",
+          pincode: "",
+          whatsapp: "",
+          monthlyBill: "",
+          message: "",
+        });
+      } else {
+        alert("Error: " + data.error);
+      }
+    } catch (err) {
+      alert("Submission failed: " + err.message);
+    }
+  };
+
   return (
     <div className="page-container">
       <section
@@ -16,42 +71,30 @@ function Contact() {
       </section>
 
       <div className="contact-grid">
-        <form className="contact-form" style={{ textAlign: "left" }}>
+        <form className="contact-form" onSubmit={handleSubmit}>
           <label>Full Name</label>
-          <input type="text" placeholder="Full Name" required />
+          <input type="text" name="fullname" value={form.fullname} onChange={handleChange} required />
 
           <label>Email (optional)</label>
-          <input type="email" placeholder="Email (optional)" />
-          <small className="field-hint">
-            We’ll use this to send your quote and design (if provided).
-          </small>
+          <input type="email" name="email" value={form.email} onChange={handleChange} />
 
           <div className="form-row">
             <div>
               <label>Pincode</label>
-              <input type="text" placeholder="Pincode" required maxLength={6} />
+              <input type="text" name="pincode" value={form.pincode} onChange={handleChange} required maxLength={6} />
             </div>
             <div>
               <label>WhatsApp</label>
-              <input type="tel" placeholder="WhatsApp Number" required />
-              <small className="field-hint">
-                We’ll reach out on WhatsApp between 10:00–18:00.
-              </small>
+              <input type="tel" name="whatsapp" value={form.whatsapp} onChange={handleChange} required />
             </div>
             <div>
               <label>Monthly Electricity Bill (₹)</label>
-              <input type="number" placeholder="e.g. 2500" min="0" step="100" required />
-              <small className="field-hint">
-                Helps us size your system and estimate savings.
-              </small>
+              <input type="number" name="monthlyBill" value={form.monthlyBill} onChange={handleChange} min="0" step="100" required />
             </div>
           </div>
 
           <label>Your Message (optional)</label>
-          <textarea
-            placeholder="Tell us about your property or goals"
-            rows="5"
-          ></textarea>
+          <textarea name="message" value={form.message} onChange={handleChange} rows="5"></textarea>
 
           <button type="submit">Send Message</button>
         </form>
@@ -60,16 +103,11 @@ function Contact() {
           <div className="wa-box">
             <h3>Prefer WhatsApp?</h3>
             <p>Chat with us for quick responses, 10:00–18:00 (Mon–Sat).</p>
-            <a
-              className="btn-primary"
-              href="https://wa.me/91800555XXXX"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="btn-primary" href="https://wa.me/918765257286" target="_blank" rel="noreferrer">
               Chat on WhatsApp
             </a>
           </div>
-          <div className="info-box">  
+          <div className="info-box">
             <h3>What to expect</h3>
             <ul>
               <li>Free site assessment and savings estimate</li>
@@ -80,17 +118,8 @@ function Contact() {
         </aside>
       </div>
 
-      <a
-        className="fabwhatsapp"
-        href="https://wa.me/91800555XXXX"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          src={`${process.env.PUBLIC_URL}/images/whatslogo.png`}
-          alt="WhatsApp"
-          style={{ width: "25px", height: "25px"}}
-        />
+      <a className="fabwhatsapp" href="https://wa.me/918765257286" target="_blank" rel="noreferrer">
+        <img src={`${process.env.PUBLIC_URL}/images/whatslogo.png`} alt="WhatsApp" style={{ width: "25px", height: "25px" }} />
       </a>
     </div>
   );
