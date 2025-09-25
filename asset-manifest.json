@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/solarcompany/static/css/main.d6ece668.css",
-    "main.js": "/solarcompany/static/js/main.66eeb5e5.js",
+    "main.css": "/solarcompany/static/css/main.2dd3c04f.css",
+    "main.js": "/solarcompany/static/js/main.da6dd3bc.js",
     "static/js/453.1305b9c1.chunk.js": "/solarcompany/static/js/453.1305b9c1.chunk.js",
     "index.html": "/solarcompany/index.html",
-    "main.d6ece668.css.map": "/solarcompany/static/css/main.d6ece668.css.map",
-    "main.66eeb5e5.js.map": "/solarcompany/static/js/main.66eeb5e5.js.map",
+    "main.2dd3c04f.css.map": "/solarcompany/static/css/main.2dd3c04f.css.map",
+    "main.da6dd3bc.js.map": "/solarcompany/static/js/main.da6dd3bc.js.map",
     "453.1305b9c1.chunk.js.map": "/solarcompany/static/js/453.1305b9c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6ece668.css",
-    "static/js/main.66eeb5e5.js"
+    "static/css/main.2dd3c04f.css",
+    "static/js/main.da6dd3bc.js"
   ]
 }
