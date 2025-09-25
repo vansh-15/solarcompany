@@ -173,12 +173,12 @@ h1,h2,h3,h4 { margin:0; }
   color:white;
   font-size:1.3rem;
 }
+
 .fabwhatsapp:hover {
   filter:brightness(1.1);
   transform: scale(1.05);
+  background: #fbfffc;  
 }
-
-
 
 /* Page container */
 .page-container { padding:4rem 2rem; text-align:center; }

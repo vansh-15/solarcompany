@@ -3,7 +3,7 @@ import React from "react";
 function Services() {
   return (
     <div className="page-container">
-      <section className="services-hero" style={{ background: `linear-gradient(rgba(30,58,138,0.6), rgba(30,58,138,0.6)), url(${process.env.PUBLIC_URL}/images/solarimage1.jpg) center/cover no-repeat` }}>
+      <section className="services-hero" style={{ background: `linear-gradient(rgba(30,58,138,0.6), rgba(30,58,138,0.6)), url(${process.env.PUBLIC_URL}/images/solarimage1.webp) center/cover no-repeat` }}>
         <div className="overlay">
           <h1>Solar Services Tailored to You</h1>
           <p>From design to maintenance — we handle it all, end-to-end.</p>

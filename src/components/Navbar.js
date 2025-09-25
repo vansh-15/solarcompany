@@ -22,7 +22,7 @@ function Navbar() {
           width: "100%",
         }}
       >
-        <div className="logo">VK Solar</div>
+        <div className="logo">Sunmarse Solar</div>
 
         <button
           className="menu-toggle"

@@ -5,7 +5,7 @@ function About() {
     <div className="page-container">
       <section className="about-hero" style={{ background: `linear-gradient(rgba(30,58,138,0.6), rgba(30,58,138,0.6)), url(${process.env.PUBLIC_URL}/images/solarimage1.jpg) center/cover no-repeat` }}>
         <div className="overlay">
-          <h1>About VK Solar</h1>
+          <h1>About Sunmarse Solar</h1>
           <p>Trusted solar installers delivering clean energy for over a decade.</p>
         </div>
       </section>
@@ -15,7 +15,7 @@ function About() {
           <div className="about-text">
             <h2>Who We Are</h2>
             <p>
-              SolarPower has been delivering high-quality solar solutions for over 10 years.
+              Sunmarse Solar has been delivering high-quality solar solutions for over nearly 5 years.
               We are committed to sustainability, reliability, and affordable energy for all.
             </p>
             <p>
@@ -26,7 +26,7 @@ function About() {
             <a href="/contact" className="btn-primary">Speak with a Solar Specialist</a>
           </div>
           <div className="about-image">
-            <img src={`${process.env.PUBLIC_URL}/images/happyteam.jpg`} alt="Our team installing solar panels" />
+            <img src={`${process.env.PUBLIC_URL}/images/happyteam.webp`} alt="Our team installing solar panels" />
           </div>
         </div>
       </section>
@@ -63,7 +63,7 @@ function About() {
         <div className="partners-inner">
           <span>In collaboration with</span>
           <div className="partners-logos">
-            <img src={`${process.env.PUBLIC_URL}/images/pmsuryaghar.jpg`} alt="PM Suryaghar Partner" />
+            <img src={`${process.env.PUBLIC_URL}/images/pmsuryaghar.webp`} alt="PM Suryaghar Partner" />
           </div>
         </div>
       </section>
@@ -72,7 +72,7 @@ function About() {
         <div className="features-grid" style={{alignItems:"stretch"}}>
           <div className="feature-card" style={{textAlign:"left"}}>
             <h3>2022</h3>
-            <p>VK Solar founded with a mission to make solar accessible to each and every home and business.</p>
+            <p>Sunmarse Solar founded with a mission to make solar accessible to each and every home and business.</p>
           </div>
           <div className="feature-card" style={{textAlign:"left"}}>
             <h3>2023</h3>
@@ -89,19 +89,19 @@ function About() {
         <h2>Meet the Team</h2>
         <div className="team-grid">
           <div className="team-card">
-            <img src={`${process.env.PUBLIC_URL}/images/solarowner.jpg`} alt="Company Owner" />
+            <img src={`${process.env.PUBLIC_URL}/images/solarowner.webp`} alt="Company Owner" />
             <h4>Himanshu Shukla</h4>
-            <p>Company Owner</p>
+            <p>Chief Executive Officer</p>
           </div>
           <div className="team-card">
-            <img src={`${process.env.PUBLIC_URL}/images/solarmanager.jpg`} alt="Manager" />
+            <img src={`${process.env.PUBLIC_URL}/images/solarmanager.webp`} alt="Manager" />
             <h4>Sonu Shukla</h4>
-            <p>Manager</p>
+            <p>Chief Operating Officer</p>
           </div>
           <div className="team-card">
             <img src={`${process.env.PUBLIC_URL}/images/TechnicalLeader.jpg`} alt="Technical Leader" />
             <h4>Vansh Mishra</h4>
-            <p>Tech Team Leader</p>
+            <p>Chief Technology Officer</p>
           </div>
         </div>
       </section>

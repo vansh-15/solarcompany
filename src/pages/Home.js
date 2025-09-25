@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <>
-      <section className="hero" style={{ background: `url(${process.env.PUBLIC_URL}/images/solarimage1.jpg) center/cover no-repeat` }}>
+      <section className="hero" style={{ background: `url(${process.env.PUBLIC_URL}/images/solarimage1.webp) center/cover no-repeat` }}>
         <div className="overlay">
           <h1>Power Your Future with Solar Energy</h1>
           <p>Clean, Reliable & Sustainable Energy Solutions</p>
@@ -12,7 +12,7 @@ function Home() {
       </section>
 
       <section className="features">
-        <h2>Why Choose VK Solar?</h2>
+        <h2>Why Choose Sunmarse Solar?</h2>
         <div className="features-grid">
           <div className="feature-card">
             <h3>🌍 Eco-Friendly</h3>
@@ -33,17 +33,17 @@ function Home() {
         <h2>Our Services</h2>
         <div className="services-grid">
           <div className="service-card">
-            <img src={`${process.env.PUBLIC_URL}/images/solarimage7.jpg`} alt="Installation"/>
+            <img src={`${process.env.PUBLIC_URL}/images/solarimage7.webp`} alt="Installation"/>
             <h3>Solar Installation</h3>
             <p>Professional solar panel installation for homes & businesses.</p>
           </div>
           <div className="service-card">
-            <img src={`${process.env.PUBLIC_URL}/images/solarmaintain.jpg`} alt="Maintenance"/>
+            <img src={`${process.env.PUBLIC_URL}/images/solarmaintain.webp`} alt="Maintenance"/>
             <h3>Maintenance</h3>
             <p>Keep your system efficient with our expert maintenance services.</p>
           </div>
           <div className="service-card">
-            <img src={`${process.env.PUBLIC_URL}/images/solarconsult.jpg`} alt="Consultation"/>
+            <img src={`${process.env.PUBLIC_URL}/images/solarconsult.webp`} alt="Consultation"/>
             <h3>Consultation</h3>
             <p>Get advice on solar solutions tailored to your needs.</p>
           </div>

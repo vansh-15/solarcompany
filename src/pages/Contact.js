@@ -6,11 +6,11 @@ function Contact() {
       <section
         className="contact-hero"
         style={{
-          background: `linear-gradient(rgba(30,58,138,0.6), rgba(30,58,138,0.6)), url(${process.env.PUBLIC_URL}/images/solarimage1.jpg) center/cover no-repeat`,
+          background: `linear-gradient(rgba(30,58,138,0.6), rgba(30,58,138,0.6)), url(${process.env.PUBLIC_URL}/images/solarimage1.webp) center/cover no-repeat`,
         }}
       >
         <div className="overlay">
-          <h1>Contact VK Solar</h1>
+          <h1>Contact Sunmarse Solar</h1>
           <p>We’re here to help you go solar — quickly and confidently.</p>
         </div>
       </section>

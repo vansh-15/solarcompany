@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-inner" style={{maxWidth:"1100px", margin:"0 auto", display:"flex", flexWrap:"wrap", gap:"2rem", justifyContent:"space-between", textAlign:"left"}}>
         <div style={{minWidth:"220px"}}>
-          <h3 style={{marginBottom:"0.5rem"}}>VK Solar</h3>
+          <h3 style={{marginBottom:"0.5rem"}}>Sunmarse Solar</h3>
           <p style={{opacity:0.85}}>Clean, reliable solar solutions for homes and businesses.</p>
         </div>
         <div style={{minWidth:"180px"}}>
@@ -24,7 +24,7 @@ function Footer() {
           <p>hello@solarpower.com</p>
         </div>
       </div>
-      <p style={{marginTop:"1rem"}}>© 2025 VK Solar. All rights reserved.</p>
+      <p style={{marginTop:"1rem"}}>© 2025 Sunmarse Solar. All rights reserved.</p>
     </footer>
   );
 }
