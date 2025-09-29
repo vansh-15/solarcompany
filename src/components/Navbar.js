@@ -22,7 +22,17 @@ function Navbar() {
           width: "100%",
         }}
       >
-        <div className="logo">Sunmarse Solar</div>
+        <div className="logo">
+          <Link to="/" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
+    <img
+      src={`${process.env.PUBLIC_URL}/images/vansh solar.png`}
+      alt="Sunmarse Solar"
+      style={{ height: "70px", objectFit: "contain" }}
+    />
+    <span className="logo-text">Sunmarse Solar</span>
+  </Link>
+</div>
+
 
         <button
           className="menu-toggle"

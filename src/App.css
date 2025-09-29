@@ -4,7 +4,7 @@ a { text-decoration:none; color:inherit; }
 h1,h2,h3,h4 { margin:0; }
 
 :root {
-  --brand-primary:#1e3a8a; /* deep blue */
+  --brand-primary:#0a192f; /* deep blue */
   --brand-accent:#f97316;  /* solar orange */
   --text:#1f2937;
   --muted:#6b7280;
@@ -18,8 +18,26 @@ h1,h2,h3,h4 { margin:0; }
   display:flex; justify-content:space-between; align-items:center;
   padding:1rem 2rem; background:var(--brand-primary); color:white;
   box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
 }
 .logo { font-size:1.8rem; font-weight:bold; letter-spacing:0.5px; }
+
+/* Navbar Logo */
+.logo img {
+  display: block;
+  max-height: 70px; /* adjust as needed */
+}
+
+.logo-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 4px;
+  color: white; /* matches navbar background */
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+
 .nav-links { display:flex; gap:2rem; list-style:none; align-items:center; }
 .nav-links li a { font-weight:500; position:relative; padding-bottom:2px; }
 .nav-links li a::after { content:""; position:absolute; left:0; bottom:-4px; height:2px; width:0; background:var(--brand-accent); transition:width .2s ease; }
@@ -44,10 +62,17 @@ h1,h2,h3,h4 { margin:0; }
 .footer h4 { margin:0 0 0.5rem 0; }
 .footer ul { list-style:none; padding:0; margin:0; line-height:1.9; }
 
+.page-container {
+  padding: calc(70px + 2rem) 2rem 2rem 2rem; /* 70px = navbar height */
+  text-align: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
 /* Hero */
 .hero {
   /* background set inline to avoid bundler resolving /images path */
-  height:80vh; display:flex; align-items:center; justify-content:center;
+  height:calc(80vh - 70px); display:flex; align-items:center; justify-content:center;
   position:relative;
 }
 .overlay {
@@ -175,6 +200,29 @@ h1,h2,h3,h4 { margin:0; }
 }
 
 .fabwhatsapp:hover {
+  filter:brightness(1.1);
+  transform: scale(1.05);
+  background: #fbfffc;  
+}
+
+.fabcall {
+  position: fixed;
+  bottom: 80px; /* shifted above WhatsApp button */
+  right: 20px;
+  background: #34b7f1;
+  border-radius: 50%;   
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s, filter 0.2s;
+  z-index: 9999;
+  color:white;
+  font-size:1.3rem;
+}
+
+.fabcall:hover {
   filter:brightness(1.1);
   transform: scale(1.05);
   background: #fbfffc;  

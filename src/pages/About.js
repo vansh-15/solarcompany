@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div className="page-container">
-      <section className="about-hero" style={{ background: `linear-gradient(rgba(30,58,138,0.6), rgba(30,58,138,0.6)), url(${process.env.PUBLIC_URL}/images/solarimage1.jpg) center/cover no-repeat` }}>
+      <section className="about-hero" style={{ background: `linear-gradient(rgba(30,58,138,0.6), rgba(30,58,138,0.6)), url(${process.env.PUBLIC_URL}/images/solarimage1.webp) center/cover no-repeat` }}>
         <div className="overlay">
           <h1>About Sunmarse Solar</h1>
           <p>Trusted solar installers delivering clean energy for over a decade.</p>
@@ -95,7 +95,7 @@ function About() {
           </div>
           <div className="team-card">
             <img src={`${process.env.PUBLIC_URL}/images/solarmanager.webp`} alt="Manager" />
-            <h4>Sonu Shukla</h4>
+            <h4>Amit Tiwari</h4>
             <p>Chief Operating Officer</p>
           </div>
           <div className="team-card">

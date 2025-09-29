@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <>
+    <div className="page-container">
       <section className="hero" style={{ background: `url(${process.env.PUBLIC_URL}/images/solarimage1.webp) center/cover no-repeat` }}>
         <div className="overlay">
           <h1>Power Your Future with Solar Energy</h1>
@@ -84,7 +84,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
