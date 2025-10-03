@@ -11,7 +11,8 @@ function About() {
       </section>
 
       <section className="about-overview">
-        <div className="about-grid">
+        <div className="container">
+          <div className="about-grid">
           <div className="about-text">
             <h2>Who We Are</h2>
             <p>
@@ -29,9 +30,11 @@ function About() {
             <img src={`${process.env.PUBLIC_URL}/images/happyteam.webp`} alt="Our team installing solar panels" />
           </div>
         </div>
+        </div>
       </section>
 
       <section className="about-cards">
+        <div className="container">
         <div className="about-card">
           <h3>Our Mission</h3>
           <p>
@@ -57,19 +60,23 @@ function About() {
             <li>Service — Dedicated support, long-term maintenance</li>
           </ul>
         </div>
+        </div>
       </section>
 
       <section className="partners-strip">
+        <div className="container">
         <div className="partners-inner">
           <span>In collaboration with</span>
           <div className="partners-logos">
             <img src={`${process.env.PUBLIC_URL}/images/pmsuryaghar.webp`} alt="PM Suryaghar Partner" />
           </div>
         </div>
+        </div>
       </section>
       <section className="about-journey">
-        <h2>Our Journey</h2>
-        <div className="features-grid" style={{alignItems:"stretch"}}>
+        <div className="container">
+          <h2>Our Journey</h2>
+          <div className="features-grid" style={{alignItems:"stretch"}}>
           <div className="feature-card" style={{textAlign:"left"}}>
             <h3>2022</h3>
             <p>Sunmarse Solar founded with a mission to make solar accessible to each and every home and business.</p>
@@ -82,12 +89,14 @@ function About() {
             <h3>2025</h3>
             <p>500th install completed and new smart monitoring offering launched.</p>
           </div>
+          </div>
         </div>
       </section>
 
       <section className="team">
-        <h2>Meet the Team</h2>
-        <div className="team-grid">
+        <div className="container">
+          <h2>Meet the Team</h2>
+          <div className="team-grid">
           <div className="team-card">
             <img src={`${process.env.PUBLIC_URL}/images/solarowner.webp`} alt="Company Owner" />
             <h4>Himanshu Shukla</h4>
@@ -102,6 +111,7 @@ function About() {
             <img src={`${process.env.PUBLIC_URL}/images/TechnicalLeader.jpg`} alt="Technical Leader" />
             <h4>Vansh Mishra</h4>
             <p>Chief Technology Officer</p>
+          </div>
           </div>
         </div>
       </section>

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "../contexts/ThemeContext";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -12,16 +14,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div
-        style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
-      >
+      <div className="navbar-container">
         <div className="logo">
           <Link to="/" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
     <img
@@ -86,6 +79,16 @@ function Navbar() {
             <Link to="/contact" className="btn-primary">
               Get a Quote
             </Link>
+          </li>
+          <li>
+            <button 
+              className="theme-toggle" 
+              onClick={toggleTheme}
+              aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+              title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+            >
+              {theme === 'light' ? '🌙' : '☀️'}
+            </button>
           </li>
         </ul>
       </div>
